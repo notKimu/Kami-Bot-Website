@@ -93,7 +93,7 @@
 		</xml>
 	</div>
 
-	<div class="full-section overflow-hidden relative">
+	<div class="full-section overflow-hidden relative header-separator">
 		<img class="kamibg" src={kamiEars} alt="The profile pic of Kami discord bot" />
 
 		<h1 class="title">Simple and cute</h1>
@@ -113,6 +113,10 @@
 </article>
 
 <style>
+	* {
+		overflow: hidden;
+	}
+
 	.presentation {
 		position: relative;
 

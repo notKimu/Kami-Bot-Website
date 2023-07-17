@@ -79,6 +79,10 @@ button {
 	font-size: var(--font-size-xl);
 }
 
+.header-separator {
+	margin-bottom: 0;
+}
+
 /**POPUPS! */
 .popup-parent {
 	position: relative;
@@ -126,6 +130,10 @@ button {
 
 	.popup-parent:hover .popup {
 		transform: translateX(-35%) translateY(-300%);
+	}
+
+	.header-separator {
+		margin-bottom: var(--header-height);
 	}
 }
 
