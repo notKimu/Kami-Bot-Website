@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.category ?? "Not Found :?"}</title>
+	<title>{data.category ?? 'Not Found :?'}</title>
 </svelte:head>
 
 <article class="width-w-header-f">
@@ -60,7 +60,7 @@
 	}
 
 	.command-name {
-        border-bottom: 3px dashed azure;
+		border-bottom: 3px dashed azure;
 		padding-bottom: var(--padding-s);
 	}
 
@@ -76,9 +76,9 @@
 	}
 
 	@media screen and (max-width: 875px) {
-        article {
-            margin-bottom: var(--header-height);
-        }
+		article {
+			margin-bottom: var(--header-height);
+		}
 
 		.commands-container {
 			grid-template-columns: 1fr;
