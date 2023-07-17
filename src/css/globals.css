@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'Blocky';
+	src: url('../assets/fonts/DustyPro.ttf');
+}
+@font-face {
+	font-family: 'Poster';
+	src: url('../assets/fonts/1797-MEDIUM.otf');
+}
+@font-face {
+	font-family: 'Orbit';
+	src: url('../assets/fonts/Orbit-Regular.ttf');
+}
+
+:root {
+	--accent-color: #ff7de1;
+	--bg-color: #171717;
+
+	--padding-s: 0.5rem;
+	--padding-m: 1rem;
+	--padding-x: 2rem;
+	--padding-xl: 3rem;
+
+	--header-height: 100dvh;
+	--header-width: 8rem;
+
+	--font-blocky: 'Blocky';
+	--font-poster: 'Poster';
+
+	--font-size-std: 1.5rem;
+	--font-size-x: 4rem;
+	--font-size-xl: 5dvw;
+	--font-size-xxl: 6rem;
+	--font-size-chungus: 7rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	transition: 0.2s;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: azure;
+	font-family: 'Orbit';
+}
+
+a {
+	all: unset;
+}
+
+p {
+	font-size: var(--font-size-std);
+}
+
+button {
+	background-color: transparent;
+	border: 1px solid azure;
+	padding: var(--padding-s) var(--padding-m) var(--padding-s);
+	color: azure;
+	font-size: var(--font-size-m);
+}
+
+.full-section {
+	height: 100dvh;
+	width: 100dvw;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--padding-m);
+
+	padding: var(--padding-x);
+}
+
+.title {
+	font-family: var(--font-blocky);
+	font-size: var(--font-size-xl);
+}
+
+/**POPUPS! */
+.popup-parent {
+	position: relative;
+}
+
+.popup {
+	position: fixed;
+	width: max-content;
+
+	display: grid;
+	place-content: center;
+
+	background-color: var(--bg-color);
+	border-radius: var(--padding-s);
+	padding: var(--padding-s) var(--padding-m) var(--padding-s);
+
+	opacity: 0;
+	pointer-events: none;
+	transform: translateX(-120%) translateY(-140%);
+}
+
+.popup-parent:hover .popup {
+	opacity: 1;
+	transform: translateX(-130%) translateY(-140%);
+}
+
+/**RESPONSIVE */
+@media screen and (max-width: 875px) {
+	:root {
+		--header-height: 6rem;
+		--header-width: 100dvw;
+
+		--font-size-std: 1.3rem;
+		--font-size-xl: 8dvw;
+		--font-size-chungus: 15dvw;
+	}
+
+	.width-w-header {
+		width: 100%;
+	}
+
+	.popup {
+		transform: translateX(0%) translateY(-300%);
+	}
+
+	.popup-parent:hover .popup {
+		transform: translateX(-35%) translateY(-300%);
+	}
+}
+
+@media screen and (max-width: 425px) {
+	:root {
+		--font-size-std: 1rem;
+		--font-size-xl: 10dvw;
+		--font-size-chungus: 21dvw;
+	}
+}

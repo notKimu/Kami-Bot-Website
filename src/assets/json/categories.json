@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Levelling",
+        "description": "The commands to configure and see your levels!",
+        "svgURL": "https://cdn.discordapp.com/attachments/1112890871109664848/1128852354565931172/star.svg",
+        "url": "commands/levelling"
+    },
+    {
+        "name": "Moderation",
+        "description": "Some commands to help moderation!",
+        "svgURL": "https://cdn.discordapp.com/attachments/1112890871109664848/1130461353186951330/code.svg",
+        "url": "commands/moderation"
+    }
+]

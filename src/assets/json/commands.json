@@ -1,0 +1,90 @@
+{
+		"levelling": [
+            {
+                "name": "rank",
+                "options": "<member?>",
+                "description": "Shows the user's level progress in an image card.",
+                "defaultPerm": "Everyone"
+            },
+            {
+				"name": "ranking",
+                "options": null,
+                "description": "Shows the top 10 users with most XP and your position.",
+                "defaultPerm": "Everyone"
+            },
+            {
+				"name": "rank-image",
+                "options": null,
+                "description": "Lets you change the background image of your rank card.",
+                "defaultPerm": "Everyone"
+            },
+            {
+				"name": "calculate-xp",
+                "options": "<level>",
+                "description": "See how much XP you need for a level and how much more you need.",
+                "defaultPerm": "Everyone"
+            },
+            {
+				"name": "set-level",
+                "options": "<level>",
+                "description": "Set the level of a user, use this respectfully, please. >~<",
+                "defaultPerm": "Manage Messages"
+            },
+            {
+				"name": "status",
+                "options": null,
+                "description": "See the level configuration of your server! -w-",
+                "defaultPerm": "Manage Messages"
+            },
+            {
+				"name": "add-reward",
+                "options": "<level> <role>",
+                "description": "Makes me give that role when a user gets to that level! c:",
+                "defaultPerm": "Kick Members"
+            },
+            {
+				"name": "remove-reward",
+                "options": "<level> <role>",
+                "description": "I will stop giving that role when a user gets to that level.",
+                "defaultPerm": "Kick Members"
+            },
+            {
+				"name": "set-message-xp",
+                "options": "<number>",
+                "description": "Set the maximum XP I can give per message. :P",
+                "defaultPerm": "Kick Members"
+            },
+            {
+				"name": "set-base-xp",
+                "options": "<number>",
+                "description": "How much XP is needed to get to level 1, for each level I multiply it by the difficulty and add the base XP.",
+                "defaultPerm": "Kick Members"
+            },
+            {
+				"name": "set-difficulty",
+                "options": "<number>",
+                "description": "How much more difficult it is to get to the next level, the default is 1.1, which I think it's good. o.o",
+                "defaultPerm": "Kick Members"
+            },
+            {
+				"name": "set-level-channel",
+                "options": "<channel>",
+                "description": "Where do you want me to send the level up messages? If no one is set I will send them to the system channel, else I'll create one myself, choose.",
+                "defaultPerm": "Kick Members"
+            }
+        ],
+		"moderation": [
+            {
+                "name": "clear",
+                "options": "<number>",
+                "description": "Deletes the number of messages you choose from the channel.",
+                "defaultPerm": "Manage Messages"
+            },
+			{
+                "name": "shutup",
+                "options": "<time option> <time>",
+                "description": "Lets me MUTE a member for the period of time you choose :DDD [0 unmutes].",
+                "defaultPerm": "Mute Members"
+            }
+        ]
+}

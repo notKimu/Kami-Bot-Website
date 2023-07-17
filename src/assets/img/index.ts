@@ -1,0 +1,1 @@
+export * as kamiEars from "./kamiEars.webp";
