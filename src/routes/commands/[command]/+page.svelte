@@ -4,6 +4,10 @@
 	console.log(data.category);
 </script>
 
+<svelte:head>
+	<title>{data.category ?? "Not Found :?"}</title>
+</svelte:head>
+
 <article class="width-w-header-f">
 	{#if data.commands === null}
 		<h1>No commands here!</h1>

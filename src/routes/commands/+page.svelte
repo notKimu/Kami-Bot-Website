@@ -2,6 +2,10 @@
     import categories from "../../assets/json/categories.json";
 </script>
 
+<svelte:head>
+	<title>Kami Commands -w-</title>
+</svelte:head>
+
 <article>
     <div class="full-section">
         <h1 class="title">/Commands</h1>

@@ -4,6 +4,10 @@
 	import kamiPfp from '../assets/img/kamiEars.webp';
 </script>
 
+<svelte:head>
+	<title>Kami Bot!</title>
+</svelte:head>
+
 <header>
 	<div class="separator">
 		<div class="header-column">
