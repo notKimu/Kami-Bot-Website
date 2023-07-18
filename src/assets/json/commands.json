@@ -49,6 +49,30 @@
                 "defaultPerm": "Kick Members"
             },
             {
+				"name": "set-level-up-title",
+                "options": null,
+                "description": "Change the title of the embed I send when a user levels up. :0",
+                "defaultPerm": "Kick Members"
+            },
+            {
+				"name": "set-level-up-message",
+                "options": "{member} {level}",
+                "description": "Set the message of the embed I send when someone levels up.\n{member} is replaced by the member.\n{level} is replaced by the level the user got.",
+                "defaultPerm": "Kick Members"
+            },
+            {
+				"name": "set-reward-title",
+                "options": null,
+                "description": "Change the title of the embed I send when a user levels up AND gets a reward (a role). o.o",
+                "defaultPerm": "Kick Members"
+            },
+            {
+				"name": "set-reward-message",
+                "options": "{member} {level} {role}",
+                "description": "Change the message of the embed I send when a user levels up AND gets a reward.\nThis time, {role} is replaced by the role I gave.",
+                "defaultPerm": "Kick Members"
+            },
+            {
 				"name": "set-message-xp",
                 "options": "<number>",
                 "description": "Set the maximum XP I can give per message. :P",
